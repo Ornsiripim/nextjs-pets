@@ -50,24 +50,28 @@ const EditPage = async ({ params }) => {
           </Link>
 
           <h1 className="page-section-title mb-big">Contacts for {pet.name}</h1>
-          <table className="contact-list">
-            <tbody>
-              <tr>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Comment</th>
-              </tr>
-              {contacts.map(contact => {
-                return (
-                  <tr>
-                    <td>{contact.name}</td>
-                    <td>{contact.email}</td>
-                    <td>{contact.comment}</td>
-                  </tr>
-                )
-              })}
-            </tbody>
-          </table>
+          {contacts.length > 0 ? (
+            <table className="contact-list">
+              <tbody>
+                <tr>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Comment</th>
+                </tr>
+                {contacts.map(contact => {
+                  return (
+                    <tr key={contact._id}>
+                      <td>{contact.name}</td>
+                      <td>{contact.email}</td>
+                      <td>{contact.comment}</td>
+                    </tr>
+                  )
+                })}
+              </tbody>
+            </table>
+          ) : (
+            <p>This pet has no contacts yet.</p>
+          )}
         </div>
       </div>
     </>
