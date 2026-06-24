@@ -50,7 +50,7 @@ const HomePage = async () => {
                   </defs>
                 </svg>
 
-                <h2>Sunny Play</h2>
+                <h2>Sunny Outdoor Space</h2>
 
                 <p>Our center is located in beautiful Miami, and it&rsquo;s currently {temperature}°F at our pet playground.
                 </p>

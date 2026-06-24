@@ -280,6 +280,13 @@ body {
   color: #A2A2A2;
   font-size: .85rem;
   margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.pet-age svg {
+  flex-shrink: 0;
 }
 
 @media screen and (min-width: 600px) {
@@ -755,4 +762,203 @@ textarea.form-field {
   padding: 2px 4px;
   line-height: 1;
   font-size: .75rem;
+}
+
+/*our-vision*/
+.history-pull-quote {
+  border-left: 3px solid #475AFF;
+  padding-left: 20px;
+  margin: 40px 0;
+}
+
+.history-pull-quote p {
+  font-size: 1.4rem;
+  font-style: inherit;
+  color: #222;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.history-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 40px 0;
+}
+
+.history-stat-card {
+  background-color: #F7F7F7;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.history-stat-number {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0 0 4px 0;
+  color: #001D37;
+}
+
+.history-stat-label {
+  font-size: 1rem;
+  color: #9F9F9F;
+  margin: 0;
+}
+
+.history-divider {
+  border: none;
+  border-top: 1px solid #e7e3e3a0;
+  margin: 40px 0;
+}
+
+/* Timeline */
+.history-timeline-heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #626262;
+  margin-bottom: 50px;
+}
+
+.history-timeline-item {
+  display: flex;
+  gap: 25px;
+}
+
+.history-timeline-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 12px;
+  flex-shrink: 0;
+}
+
+.history-timeline-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #475AFF;
+  flex-shrink: 0;
+  margin-top: 5px;
+}
+
+.history-timeline-line {
+  width: 1.5px;
+  background-color: #F3F3F3;
+  flex: 1;
+  margin: 4px 0;
+}
+
+.history-timeline-year {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #9F9F9F;
+  margin-top: 0;
+  min-width: 36px;
+  flex-shrink: 0;
+}
+
+.history-timeline-body {
+  padding-bottom: 0;
+}
+
+.history-timeline-body--spaced {
+  padding-bottom: 28px;
+}
+
+.history-timeline-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #001D37;
+  margin: 0 0 4px 0;
+}
+
+.history-timeline-desc {
+  font-size: 1rem;
+  color: #626262;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Our vision */
+.vision-opening {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #001D37;
+  line-height: 1.65;
+  margin-bottom: 40px;
+}
+
+.vision-pillars {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 40px 0;
+}
+
+.vision-pillar-card {
+  background-color: #F7F7F7;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.vision-pillar-icon {
+  color: #0b0816;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.vision-pillar-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #001D37;
+  margin: 0 0 6px 0;
+}
+
+.vision-pillar-desc {
+  font-size: 0.9rem;
+  color: #626262;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.vision-divider {
+  border: none;
+  border-top: 1px solid #e7e3e3a0;
+  margin: 40px 0;
+}
+
+.vision-closing-card {
+  border: 1px solid #e7e3e3a0;
+  border-radius: 12px;
+  padding: 28px 32px;
+  margin-top: 40px;
+}
+
+.vision-closing-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #9F9F9F;
+  margin: 0 0 12px 0;
+}
+
+.vision-closing-text {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #001D37;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .vision-pillars {
+    grid-template-columns: 1fr;
+  }
+
+  .vision-closing-card {
+    padding: 20px;
+  }
 }
